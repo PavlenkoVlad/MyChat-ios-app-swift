@@ -27,7 +27,6 @@ class ChatTableViewController: UITableViewController {
         setConfigurationForInputMessageTextView()
         
         socketIOClient.setHandlerOnChatMessage(updateMessageHistoryTableView: messageHistoryTableView.addMessage(_:))
-        socketIOClient.connect()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
